@@ -1,0 +1,14 @@
+.button{
+    background: var(--feature-color);
+    border-radius: 100px;
+    height: 40px;
+    width: 160px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--text-color);
+    text-transform: uppercase;
+    font-family: var(--body-font);
+    font-weight: bold;
+    font-size: 14px;
+}

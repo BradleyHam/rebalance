@@ -1,0 +1,46 @@
+.nav{
+    background: var(--primary-color);
+    height: 80px;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.15);
+}
+.nav__container{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 80px;
+}
+.nav__list{
+    display:flex;
+    flex: 3;
+    gap:26px;
+    list-style: none;
+}
+.nav__list--item{
+  opacity: .75;
+}
+.nav__list--item a{
+    text-decoration: none;
+    font-size: 14px;
+    font-family: var(--body-font);
+    color: var(--feature-color);
+    text-transform: uppercase;
+  }
+  .active{
+    opacity: 1;
+    font-weight: bold;
+  }
+.nav__logo{
+  margin-top: 10px;
+
+}
+.nav__right-side{
+  flex:3;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 24px
+}
+
+.nav__right-side__social-icon{
+  height: 22px
+}
