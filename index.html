@@ -10,16 +10,16 @@
     <link rel="stylesheet" href="./styling/base/spacing.css">
     <link rel="stylesheet" href="./styling/components/nav.css">
     <link rel="stylesheet" href="./styling/components/button.css">
+    <link rel="stylesheet" href="./styling/components/hamburgers.css">
 </head>
 <body>
-    <nav class="nav">
+    <nav class="desktop-nav nav">
         <div class="container nav__container">
         <ul class="nav__list">
             <li class="nav__list--item active"><a href="#home">Home</a></li>
             <li class="nav__list--item "><a href="#services">Services</a></li>
             <li class="nav__list--item "><a href="#about">About</a></li>
-            <li class="nav__list--item "><a href="#prices">Prices</a></li>
-            <li class="nav__list--item "><a href="#contact">contact</a></li>
+            <li class="nav__list--item "><a href="#prices">Prices</a></li>  
           </ul>
           <div class="nav__logo">
             <img src="./images/Logo-small.png" alt="">
@@ -28,6 +28,24 @@
                 <img class="nav__right-side__social-icon nav__right-side__social-icon--facebook" src="./images/social/facebook.png" alt="">  
                 <img class="nav__right-side__social-icon nav__right-side__social-icon--instagram" src="./images/social/instagram.png" alt="">  
                 <div class="nav__right-side__button button">Book now</div> 
+            </div>
+        </div>
+    </nav>
+    <nav class="mobile-nav nav">
+        <div class="container nav__container">
+            <div class="mobile-nav__social-icons">
+                <img class="nav__right-side__social-icon nav__right-side__social-icon--facebook" src="./images/social/facebook.png" alt="">  
+                <img class="nav__right-side__social-icon nav__right-side__social-icon--instagram" src="./images/social/instagram.png" alt="">     
+            </div>
+          <div class="nav__logo">
+            <img src="./images/Logo-small.png" alt="">
+          </div>
+          <div class="nav__right-side"> 
+            <button class="hamburger hamburger--collapse" type="button">
+                <span class="hamburger-box">
+                  <span class="hamburger-inner"></span>
+                </span>
+              </button>  
             </div>
         </div>
     </nav>

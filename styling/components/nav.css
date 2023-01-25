@@ -44,3 +44,24 @@
 .nav__right-side__social-icon{
   height: 22px
 }
+.mobile-nav{
+  display:none;
+}
+@media(max-width: 920px){
+  .desktop-nav{
+    display: none;
+  }
+  .mobile-nav{
+    display: block;
+  }
+  .mobile-nav__social-icons{
+    flex:3;
+    display:flex;
+    gap: 20px;
+  }
+}
+@media(max-width: 470px){
+  .nav__container{
+    margin: 0 16px
+  }
+}
