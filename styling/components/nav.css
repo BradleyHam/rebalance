@@ -23,11 +23,12 @@
     font-size: 14px;
     font-family: var(--body-font);
     color: var(--feature-color);
+    font-weight: 300;
     text-transform: uppercase;
   }
-  .active{
+.nav__list--item.active a{
     opacity: 1;
-    font-weight: bold;
+    font-weight: 700;
   }
 .nav__logo{
   margin-top: 10px;
@@ -38,11 +39,11 @@
   display: flex;
   align-items: center;
   justify-content: flex-end;
-  gap: 24px
+  gap: 14px
 }
 
 .nav__right-side__social-icon{
-  height: 22px
+  height: 20px
 }
 .mobile-nav{
   display:none;

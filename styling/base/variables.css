@@ -9,5 +9,7 @@
     --heading-font:'PT Serif Caption', serif;
     --feature-font:'Great Vibes', cursive;
     --body-font:'Lato', sans-serif;
-
+    /* SPACING */
+    --gutter: 140px
 }
+

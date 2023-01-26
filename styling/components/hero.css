@@ -1,0 +1,26 @@
+.hero{
+    height: 100vh;
+    background: var(--primary-color);
+    display: flex;
+}
+.hero__text{
+    flex: 1;
+    margin-left: var(--gutter);
+   margin-top: 130px;
+    
+
+}
+.hero__image{
+    flex:1
+}
+.hero__text--p{
+    margin-top: 38px;
+    font-size: 18px;
+
+}
+.hero .button{
+    margin-top: 75px;
+}
+.hero img{
+    clip-path: polygon(25% 0%, 100% 0%, 100% 100%, 25% 100%, 0% 100%);
+}
