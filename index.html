@@ -40,15 +40,23 @@
           <div class="nav__logo">
             <img src="./images/Logo-small.png" alt="">
           </div>
-          <div class="nav__right-side"> 
-            <button class="hamburger hamburger--collapse" type="button">
+          <div id="nav-right-side" class="nav__right-side list-active"> 
+            <button id='hamburger' class="hamburger hamburger--collapse" type="button">
                 <span class="hamburger-box">
                   <span class="hamburger-inner"></span>
                 </span>
               </button>  
+              <ul class="nav__list--mobile">
+                <li class="nav__list--item active"><a href="#home">Home</a></li>
+                <li class="nav__list--item "><a href="#services">Services</a></li>
+                <li class="nav__list--item "><a href="#about">About</a></li>
+                <li class="nav__list--item "><a href="#prices">Prices</a></li>  
+              </ul>
             </div>
         </div>
     </nav>
+
+    <script src="./javascript/navbar.js"></script>
     
 </body>
 </html>
