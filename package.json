@@ -1,5 +1,29 @@
 {
   "dependencies": {
     "hamburgers": "^1.2.1"
-  }
+  },
+  "name": "rebalance",
+  "description": "",
+  "version": "1.0.0",
+  "main": "index.js",
+  "devDependencies": {
+    "@parcel/transformer-sass": "^2.8.3",
+    "browser-sync": "^2.27.11",
+    "gulp": "^4.0.2",
+    "gulp-sass": "^5.1.0",
+    "sass": "^1.57.1"
+  },
+  "scripts": {
+    "dev": "parcel index.html"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/BradleyHam/rebalance.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/BradleyHam/rebalance/issues"
+  },
+  "homepage": "https://github.com/BradleyHam/rebalance#readme"
 }
