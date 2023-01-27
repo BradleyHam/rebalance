@@ -1,15 +1,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Great+Vibes&family=Lato:wght@300;400;700&family=PT+Serif+Caption&display=swap');
 
-:root{
-    /* COLORS */
-    --primary-color: #3A6244;
-    --feature-color:  #F1E9D9;
-    --text-color: #333;
-    /* TYPOGRAPHY */
-    --heading-font:'PT Serif Caption', serif;
-    --feature-font:'Great Vibes', cursive;
-    --body-font:'Lato', sans-serif;
-    /* SPACING */
-    --gutter: 140px
-}
+/* COLORS */
+$primary-color: #3A6244;
+$feature-color:  #F1E9D9;
+$text-color: #333;
+/* TYPOGRAPHY */
+$heading-font:'PT Serif Caption', serif;
+$feature-font:'Great Vibes', cursive;
+$body-font:'Lato', sans-serif;
+/* SPACING */
+$gutter: 140px
+
 

@@ -1,5 +1,6 @@
+
 .nav{
-    background: var(--primary-color);
+    background: $primary-color;
     height: 80px;
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.15);
 }
@@ -21,8 +22,8 @@
 .nav__list--item a{
     text-decoration: none;
     font-size: 14px;
-    font-family: var(--body-font);
-    color: var(--feature-color);
+    font-family: $body-font;
+    color: $feature-color;
     font-weight: 300;
     text-transform: uppercase;
   }
@@ -48,10 +49,13 @@
 .mobile-nav{
   display:none;
 }
-@media(max-width: 920px){
-  .desktop-nav{
+.desktop-nav{
+  @media(max-width: 920px){
     display: none;
   }
+}
+@media(max-width: 920px){
+
   .mobile-nav{
     display: block;
   }
@@ -69,7 +73,7 @@
   }
   .nav-active .nav__list--mobile{
     display: block;
-    background: var(--feature-color);
+    background: $feature-color;
     width: 300px;
     list-style-type: none;
     right: 0;
@@ -85,7 +89,7 @@
     
   }
   .nav__list--mobile a{
-    color: var(--font-color);
+    color: $feature-color;
     text-decoration: none;
   }
   .hamburger{
@@ -96,7 +100,7 @@
 
   }
   .hamburger-inner, .hamburger-inner::before, .hamburger-inner::after{
-    background: var(--feature-color)!important;
+    background: $feature-color!important;
   }
 }
 @media(max-width: 470px){

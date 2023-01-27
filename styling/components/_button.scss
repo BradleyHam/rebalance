@@ -1,14 +1,14 @@
 .button{
-    background: var(--feature-color);
+    background: $feature-color;
     border-radius: 100px;
     height: 35px;
     width: 140px;
     display: flex;
     justify-content: center;
     align-items: center;
-    color: var(--text-color);
+    color: $text-color;
     text-transform: uppercase;
-    font-family: var(--body-font);
+    font-family: $body-font;
     font-weight: bold;
     font-size: 14px;
     box-shadow: 2px 4px 6px rgba(0, 0, 0, 0.185);

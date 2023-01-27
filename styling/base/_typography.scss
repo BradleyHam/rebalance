@@ -1,13 +1,13 @@
 h1{
     font-size: 32px;
-    font-family: var(--heading-font);
-    color: var(--feature-color);
+    font-family: $heading-font;
+    color: $feature-color;
 }
 
 p{
     font-size: 16px;
-    font-family: var(--body-font);
-    color: var(--feature-color);
+    font-family: $body-font;
+    color: $feature-color;
     font-weight: 300;
     line-height: 1.5;
 }
