@@ -16,15 +16,11 @@
      margin-top: 150px;
      display: flex;
      flex-flow: column;
-
     @media(max-width: $bp-tablet){
         margin:50px $tablet-gutter;
         margin-top: 50px;
         order: 1;
-        width:70%;
-        align-self: center;
         text-align: left;
-        align-items: center;
     }
     @media(max-width: $bp-mobile){
         margin: 50px $mobile-gutter;
@@ -35,6 +31,7 @@
 .hero__text--p{
     margin-top: 38px;
     font-size: 18px;
+    color: $feature-color;
     @media(max-width: $bp-tablet){
         font-size: 18px;
         margin-top: 30px;

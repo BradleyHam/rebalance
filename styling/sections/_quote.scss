@@ -1,0 +1,33 @@
+.quote-section{
+    margin: $gutter;
+    @media(max-width: $bp-tablet){
+        margin: $tablet-gutter;
+    }
+    @media(max-width: $bp-mobile){
+        margin: 40px $mobile-gutter 70px;
+    }
+}
+.quote-section__quote{
+    position: relative;
+}
+.quote-section__quote__p{
+    font-family: $feature-font;
+    font-size: 40px;
+    opacity: .7;
+    @media(max-width: $bp-tablet){
+        font-size: 36px;
+        line-height: 1.4;
+    }
+    @media(max-width: $bp-mobile){
+        font-size: 30px;
+    }
+}
+.quote-section__quote__footer{
+    position: absolute;
+     right: 0%;
+    // transform: translateX(50%);
+    font-family: $body-font;
+    font-weight: bold;
+   
+}
+
