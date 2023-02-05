@@ -1243,4 +1243,38 @@ body {
   margin-top: 12px;
 }
 
+.about {
+  height: 100vh;
+  color: #f1e9d9;
+  grid-template-rows: repeat(12, 1fr);
+  grid-template-columns: repeat(12, 1fr);
+  margin: 80px;
+  padding: 50px 0;
+  display: grid;
+}
+
+.about__image {
+  height: 100%;
+  width: 100%;
+  background: red;
+  grid-area: 1 / 1 / -1 / 8;
+}
+
+.about__heading {
+  font-size: 33px;
+  font-weight: 300;
+}
+
+.about__text {
+  background: #3a6244;
+  grid-area: 2 / 6 / 12 / -1;
+  padding: 100px;
+}
+
+.about__description {
+  color: #f1e9d9;
+  margin-top: 24px;
+  font-size: 16px;
+}
+
 /*# sourceMappingURL=index.38430053.css.map */
