@@ -1,4 +1,7 @@
 .about{
+    position: relative;
+}
+.about__container{
     margin: $gutter;
     padding: 50px 0;
     display: grid;
@@ -8,28 +11,55 @@
     color: $feature-color;
     // grid-template-areas: 
     // "image image image/text image/text text teext";
+    @media(max-width: $bp-tablet){
+        margin: $tablet-gutter;
+    }
+    @media(max-width: $bp-mobile){
+        margin: $mobile-gutter;
+    }
 }
 .about__image{
     // grid-area: image;
-    background: red;
     height: 100%;
     width: 100%;;
-    grid-column: 1/8;
+    grid-column: 1/7;
     grid-row: 1/-1;
+    @media(max-width: $bp-tablet){
+        grid-column: 1/-1;
+        grid-row: 1/8;
+       
+    }
 }
 .about__heading{
     font-size: 33px;
     font-weight: 300;
+    @media(max-width: $bp-tablet){
+       font-size: 24px;
+    }
 }
 .about__text{
     background: $primary-color;
-    padding: 100px;
+    padding:100px;
     // grid-area: text;
-    grid-column: 6/-1;
+    grid-column: 5/-1;
     grid-row: 2/12;
+    @media(max-width: $bp-tablet){
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 400px;
+        grid-row: 8 / -1;
+        z-index: -1;
+        padding: 100px $tablet-gutter;
+    }
+    @media(max-width: $bp-mobile){
+        padding: 100px $mobile-gutter;
+        top: 330px;
+    }
 }
 .about__description{
     color: $feature-color;
     margin-top: 24px;
     font-size: 16px;
+  
 }
