@@ -9,6 +9,12 @@ $heading-font:'PT Serif Caption', serif;
 $feature-font:'Great Vibes', cursive;
 $body-font:'Lato', sans-serif;
 /* SPACING */
-$gutter: 140px
+$gutter: 80px;
+$tablet-gutter: 60px; 
+$mobile-gutter: 30px; 
+// BREAKPOINTS
+$bp-tablet: 1024px;
+$bp-mobile: 450px;
+
 
 

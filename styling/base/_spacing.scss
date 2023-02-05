@@ -1,5 +1,5 @@
 .container{
-    margin: 0 140px;
+    margin: 0 $gutter;
 }
 @media(max-width: 1024px){
     .container{
