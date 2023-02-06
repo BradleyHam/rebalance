@@ -3,11 +3,11 @@
     background: $primary-color;
     display: flex;
 }
+
 @media(max-width: $bp-tablet){
     .hero{
         flex-flow: column;
         height: initial;
-      
     }
 }
 .hero__text{

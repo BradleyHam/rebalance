@@ -24,12 +24,17 @@
     margin-top: 20px;
 }
 .footer-content__social-row{
+    width: 300px
+}
+.footer-content__social-row a{
     display: flex;
     gap: 10px;
     align-items: center;
     font-family: $body-font;
+    color: $feature-color;
+    text-decoration: none;
 }
-.footer-content__social--icon-container{
+.icon-container{
     width: 30px;
 }
 .footer-content__social--icon-image{

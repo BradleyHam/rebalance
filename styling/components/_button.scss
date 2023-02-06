@@ -1,15 +1,23 @@
 .button{
-    background: $feature-color;
+    background: transparent;
+    border: 2px solid $feature-color;
+    color: $feature-color;
     border-radius: 100px;
     height: 35px;
     width: 140px;
     display: flex;
     justify-content: center;
     align-items: center;
-    color: $text-color;
     text-transform: uppercase;
     font-family: $body-font;
-    font-weight: bold;
+    font-weight: 400;
     font-size: 14px;
-    box-shadow: 2px 4px 6px rgba(0, 0, 0, 0.185);
+    cursor: pointer;
+    transition: background .5s;
+   // box-shadow: 2px 4px 6px rgba(0, 0, 0, 0.185);
+}
+.button:hover{
+    background: $feature-color;
+    color: $text-color;
+    font-weight: bold;
 }

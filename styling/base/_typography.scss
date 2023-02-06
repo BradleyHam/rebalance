@@ -2,12 +2,17 @@ h1{
     font-size: 32px;
     font-family: $heading-font;
     color: $feature-color;
+    font-weight: 300;
     @media(max-width: 1000px){
         font-size: 28px;
     }
     @media(max-width: 450px){
         font-size: 24px;
     }
+}
+h3{
+    font-size: 22px;
+    font-family: $heading-font;
 }
 
 p{
