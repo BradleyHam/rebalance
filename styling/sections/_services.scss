@@ -1,8 +1,14 @@
 .services{
     display: flex;
     flex-wrap: wrap;
-    margin: $gutter;
+    margin: $section-gap $gutter;
     gap: 20px;
+    @media(max-width: $bp-tablet){
+        margin: 80px $tablet-gutter;
+    }
+    @media(max-width: $bp-mobile){
+        margin: 80px $mobile-gutter;
+    }
 }
 .services-card{
     // width: calc(1200/3);

@@ -1,5 +1,5 @@
 .quote-section{
-    margin: $gutter;
+    margin: $section-gap $gutter;
     @media(max-width: $bp-tablet){
         margin: $tablet-gutter;
     }
