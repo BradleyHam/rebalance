@@ -2,11 +2,13 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    margin: $section-gap $gutter;
+    margin: $section-gap $gutter $section-gap;
+    padding-top: 100px;
     row-gap: 40px;
     column-gap: 20px;
     @media(max-width: $bp-tablet){
-        margin: 100px $tablet-gutter 100px;
+        margin: 0 $tablet-gutter $tablet-section-gap;
+        padding-top: $tablet-section-gap;
     }
     @media(max-width: $bp-mobile){
         margin: 40px $mobile-gutter;

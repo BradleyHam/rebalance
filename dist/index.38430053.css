@@ -1250,12 +1250,12 @@ body {
 }
 
 .quote-section {
-  margin: 120px 80px;
+  margin: 300px 80px 100px;
 }
 
 @media (max-width: 1024px) {
   .quote-section {
-    margin: 120px 60px;
+    margin: 80px 60px 0;
   }
 }
 
@@ -1324,13 +1324,15 @@ body {
 .services {
   flex-wrap: wrap;
   gap: 20px;
-  margin: 120px 80px;
+  margin: 0 80px 200px;
+  padding-top: 200px;
   display: flex;
 }
 
 @media (max-width: 1024px) {
   .services {
-    margin: 80px 60px;
+    margin: 0 60px 80px;
+    padding-top: 80px;
   }
 }
 
@@ -1448,13 +1450,15 @@ body {
   flex-wrap: wrap;
   justify-content: space-between;
   gap: 40px 20px;
-  margin: 120px 80px;
+  margin: 200px 80px;
+  padding-top: 100px;
   display: flex;
 }
 
 @media (max-width: 1024px) {
   .prices {
-    margin: 100px 60px;
+    margin: 0 60px 80px;
+    padding-top: 80px;
   }
 }
 

@@ -1,7 +1,7 @@
 .quote-section{
-    margin: $section-gap $gutter;
+    margin:  300px $gutter 100px;
     @media(max-width: $bp-tablet){
-        margin: $section-gap $tablet-gutter;
+        margin: $tablet-section-gap $tablet-gutter 0;
     }
     @media(max-width: $bp-mobile){
         margin: 40px $mobile-gutter 70px;

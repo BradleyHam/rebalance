@@ -1,10 +1,12 @@
 .services{
     display: flex;
     flex-wrap: wrap;
-    margin: $section-gap $gutter;
+    margin: 0 $gutter $section-gap;
+    padding-top: $section-gap;
     gap: 20px;
     @media(max-width: $bp-tablet){
-        margin: 80px $tablet-gutter;
+        margin: 0 $tablet-gutter $tablet-section-gap;
+        padding-top: $tablet-section-gap;
     }
     @media(max-width: $bp-mobile){
         margin: 80px $mobile-gutter;
