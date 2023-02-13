@@ -8,6 +8,7 @@
     grid-template-columns: repeat(12,1fr);
     grid-auto-rows: (50px, auto);
     color: $feature-color;
+   
     @media(max-width: $bp-tablet){
         grid-template-columns: 1fr;
         grid-template-rows: 500px auto;
@@ -39,6 +40,7 @@
     background: $primary-color;
     grid-column: 5/-1;
     grid-row-start: 3;
+    box-shadow: 0 15px 25px rgba(0,0,0,0.1), 0 10px 10px rgba(0,0,0,0.05);
     @media(max-width: $bp-tablet){
         grid-area: 5 / 1 / 6 / -1;
         z-index: -1;

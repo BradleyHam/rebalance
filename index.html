@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
      <link rel="stylesheet" href="./styling/main.scss">
+     <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.1/slick/slick.css"/>
 </head>
 <body>
     <nav class="desktop-nav nav">
@@ -62,10 +63,9 @@
 
     <section class="hero">
         <div class="hero__text">
-            <h1 class="hero__text--heading">Unwind and Rebalance with Our Mobile
-                and On-Site Massage</h1>
+            <h1 class="hero__text--heading">Queenstown Mobile Massage & Yoga Services</h1>
             <p class="hero__text--p">
-                Experience ultimate relaxation and rejuvenation with our elite wellness services. Allow our expert therapist to tailor a massage, Reiki, or Yin Yoga session to meet your specific needs and leave you feeling refreshed and revitalized.
+              Find peace and tranquility with the art of relaxation. Whether you need a stress-relieving massage or a calming yoga session, this business offers both mobile and on-site services to bring balance to your life. With a focus on personalized care, you'll receive expert guidance and tailored treatments to help you unwind and rejuvenate. Let the art of relaxation enhance your well-being and book your appointment today.
             </p>
             <a href="tel:+64226132936">
               <div class="nav__right-side__button button">book Now</div> 
@@ -80,25 +80,32 @@
 
     <section id="services" class="services">
       <div class="services-card">
-        <img class="services-card__image" src="./images/massage.png" alt="service image">
+        <div class="services-card__image-container">
+        <img class="services-card__image" src="./images/massage.png" 
+        alt="service image">
+      </div>
         <h3 class="services-card__title">Massage</h3>
-        <p class="services-card__description">Relax with our expert massage services including deep tissue, Swedish, hot stone, and sports massage. Book your appointment today and rejuvenate your body and mind</p>
+        <p class="services-card__description">Unwind with a personalized massage. We use range of techniques to alleviate tension, improve circulation, and leave you feeling refreshed. Book now for a premium, tailored massage experience</p>
       </div>
       <div class="services-card">
-        <img class="services-card__image" src="./images/yin-yoga.jpg" alt="service image">
+        <div class="services-card__image-container">
+          <img class="services-card__image" src="./images/yin-yoga.jpg" alt="service image">
+        </div>
         <h3 class="services-card__title">Yin Yoga</h3>
-        <p class="services-card__description">Find holistic healing with our Reiki massage services. Our practitioners use gentle touch to bring balance to the body and mind. Book your appointment today and experience peace and relaxation</p>
+        <p class="services-card__description">Find balance with our Yin Yoga. This slow-paced practice targets connective tissues, promotes relaxation, and improves flexibility. Book now for a rejuvenating experience with our experienced instructor</p>
       </div>
       <div class="services-card">
-        <img class="services-card__image" src="./images/Reiki.jpeg" alt="service image">
+        <div class="services-card__image-container">
+         <img class="services-card__image" src="./images/Reiki.jpeg" alt="service image">
+         </div>
         <h3 class="services-card__title">Reiki</h3>
-        <p class="services-card__description">Find inner peace and balance with our Yin Yoga classes. Slow-paced with deep stretches and long holds to improve flexibility and promote mindfulness. Sign up today and escape daily demands</p>
+        <p class="services-card__description">Experience energy healing with our Reiki services. Our solo practitioner uses gentle touch to channel positive energy, reducing stress and promoting relaxation. Book now for a unique and rejuvenating Reiki session</p>
       </div>
     </section>
 
     <section id="about" class='about'>
       <div class="about__container">
-      <img class="about__image" src="./images/about-image-cropped.jpeg"/>
+      <img class="about__image" src="./images/about-image cropped.jpeg"/>
       <div class="about__text">
         <h2 class="about__heading">“Meet Our Yin Yoga Teacher and
           Massage Therapist”</h2>
@@ -109,7 +116,7 @@
     </div>
     </section>
 
-    <section class="quote-section">
+    <section class="quote-section"></section>
       <blockquote class="quote-section__quote">
         <p class="quote-section__quote__p">Had my first massage with RE this morning and it was unbelievable! I feel so refreshed and my body feels after having such stiff muscles and knots after being quite active. I feel like a new woman thank you again!
           </p>
@@ -204,6 +211,8 @@
     </footer>
 
     <script src="./javascript/navbar.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.3.min.js"></script>
+    <script type="text/javascript" src="//cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.1/slick/slick.min.js"></script>
     
 </body>
 </html>
