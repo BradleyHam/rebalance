@@ -57,6 +57,7 @@ p {
 
 body {
   background: #f1e9d9;
+  position: relative;
 }
 
 .button {
@@ -1116,6 +1117,71 @@ body {
 
 .carousel-next {
   right: 0;
+}
+
+#overlay {
+  z-index: 10;
+  background-color: #000000e5;
+  display: none;
+  position: fixed;
+  inset: 0;
+}
+
+#overlay.active {
+  display: initial;
+}
+
+#modal {
+  z-index: 11;
+  height: 50vh;
+  min-width: 50vw;
+  background-color: #fff;
+  border-radius: 10px;
+  display: none;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+#modal.active {
+  display: initial;
+}
+
+#modal__content {
+  height: 100%;
+  background: #f1e9d9;
+  border-radius: 10px;
+  align-items: center;
+  display: flex;
+  position: relative;
+}
+
+.modal__text {
+  width: 500px;
+  flex: 1;
+  padding: 50px;
+  font-size: 22px;
+}
+
+.modal__image {
+  height: 100%;
+  width: auto;
+  object-fit: cover;
+  border-radius: 10px 0 0 10px;
+  flex: 1;
+}
+
+.modal__close {
+  cursor: pointer;
+  padding: 5px;
+  position: absolute;
+  top: 20px;
+  right: 20px;
+}
+
+.modal__close img {
+  height: 18px;
 }
 
 .footer {

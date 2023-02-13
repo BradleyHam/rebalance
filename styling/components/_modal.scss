@@ -1,0 +1,65 @@
+#overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.897);
+    z-index: 10;
+    display: none;
+    &.active{
+        display: initial
+    }
+  }
+  
+  #modal {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    border-radius: 10px;
+    z-index: 11;
+    display: none;
+    height: 50vh;
+    min-width: 50vw;
+  
+    &.active{
+        display: initial
+    }
+  }
+  
+  #modal__content {
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    position: relative;
+    height: 100%;
+    background: $feature-color;
+  }
+  
+  .modal__text{
+    width: 500px;
+    font-size: 22px;
+    flex:1;
+    padding: 50px;
+
+    
+  }
+  .modal__image{
+    flex: 1;
+    height: 100%;
+    width: auto;
+    object-fit: cover;
+    border-radius: 10px 0 0 10px;
+  }
+  .modal__close{
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    cursor: pointer;
+    padding: 5px;
+  }
+  .modal__close img{
+    height: 18px;
+  }
