@@ -4,6 +4,7 @@
     margin: 0 $gutter $section-gap;
     padding-top: $section-gap;
     gap: 20px;
+
     @media(max-width: $bp-tablet){
         margin: 0 $tablet-gutter $tablet-section-gap;
         padding-top: $tablet-section-gap;
@@ -23,6 +24,7 @@
     width: 100%;
     height: 250px;
     object-fit: cover;
+    display: block;
 }
 .services-card__image-container{
     position: relative;
@@ -52,8 +54,9 @@
     right:50%;
     transform: translate(50%, -50%);
     z-index: 3;
-    font-family: $heading-font;
+    font-family: $body-font;
     color: $feature-color;
+    font-weight: 300;
     font-size: 18px;
 }
 

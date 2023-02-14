@@ -1,0 +1,1 @@
+{"mappings":"AAAA,IAAI,OAAQ,WAAY,KAAK","sources":["javascript/initializeCarousel.js"],"sourcesContent":["new Splide( '.splide' ).mount();"],"names":[],"version":3,"file":"index.7f4d95d0.js.map","sourceRoot":"/__parcel_source_root/"}
