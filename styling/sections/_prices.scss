@@ -2,13 +2,14 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    margin: 100px $gutter $section-gap;
+    margin: 0;
     padding-top: 100px;
     row-gap: 40px;
     column-gap: 20px;
+    padding: $section-gap $gutter;
+    background: $tertiary-color;
     @media(max-width: $bp-tablet){
-        margin: 0 $tablet-gutter $tablet-section-gap;
-        padding-top: $tablet-section-gap;
+        padding-top: $tablet-section-gap $tablet-gutter;
     }
     @media(max-width: $bp-mobile){
         margin: 40px $mobile-gutter;

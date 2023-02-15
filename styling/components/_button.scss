@@ -1,6 +1,6 @@
 .button{
     background: transparent;
-    border: 2px solid $feature-color;
+    border: 1px solid $feature-color;
     color: $feature-color;
     border-radius: 100px;
     height: 35px;
@@ -10,7 +10,7 @@
     align-items: center;
     text-transform: uppercase;
     font-family: $body-font;
-    font-weight: 400;
+    font-weight: 300;
     font-size: 14px;
     cursor: pointer;
     transition: background .5s;
@@ -22,16 +22,19 @@
     font-weight: bold;
 }
 .secondary-button{
+    background: transparent;
+     border: 1px solid $feature-color;
+    color: $feature-color;
+    height: 35px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-transform: uppercase;
+    font-family: $body-font;
     font-weight: 400;
     font-size: 14px;
     cursor: pointer;
-    background: transparent;
-    text-transform: uppercase;
-    // height: 30px;
-    padding-bottom: 5px;
-    font-family: $body-font;
-    cursor: pointer;
-    color: $text-color;
-    border: none;
-    border-bottom: 1px solid black;
+    width: 120px;
+
 }

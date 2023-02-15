@@ -2,7 +2,6 @@
 .nav{
     background: $primary-color;
     height: 80px;
- 
     z-index: 10;
     position: fixed;
     top: 0;
@@ -30,7 +29,7 @@
     text-decoration: none;
     font-size: 14px;
     font-family: $body-font;
-    color: $feature-color;
+    color: $feature-color;   
     font-weight: 300;
     text-transform: uppercase;
   }
@@ -65,7 +64,6 @@
 @media(max-width: 920px){
   .mobile-nav{
     display: block;
-  
   }
   .mobile-nav__social-icons{
     flex:3;
@@ -77,42 +75,64 @@
     margin-right: -300px;
     visibility: hidden;
     transition: margin-right .5s ease;
+    display: flex;
+    flex-flow: column;
+    justify-content: space-between;
+    top:0;
+    bottom:0;
   }
   .nav-active .nav__list--mobile{
     display: block;
-    background: $feature-color;
-    width: 300px;
-    list-style-type: none;
+    background: $primary-color;
+    width: 100vw;
     right: 0;
     top: 0;
-    height: 300px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-flow: column;
-    gap: 15px;
+    height: 100vh;
     margin-right: 0px;
     visibility: inherit;
     z-index: 10; 
-   
+    display: flex;
+    align-items: center;
+    & img{
+      height: 100px;
+      width: 100px;
+      object-fit: cover
+    }
+    & ul{
+      display: flex;
+      flex-flow: column;
+      gap: 10px
+    }
+    & li{
+      text-align: center;
+    }
+    & .secondary-buttons{
+      height: 100px;
+      display: flex;
+      gap:10px;
+      align-items: center;
+    }
   }
+  // .nav-active .nav__list--mobile ul{
+
+  // display: flex;
+  // align-items: center;
+  // flex-flow: column;
+  // gap: 15px;
+  // }
+
   .nav__list--mobile a{
-    color: $text-color;
+    color: $feature-color;
     text-decoration: none;
-    
   }
   .hamburger{
     z-index: 20;
   }
   .nav-active .hamburger-inner, .nav-active .hamburger-inner::before, .nav-active.hamburger-inner::after{
-    background: #333!important;
+    background: $feature-color!important;
 
   }
   .hamburger-inner, .hamburger-inner::before, .hamburger-inner::after{
     background: $feature-color!important;
   }
-}
-ul .secondary-button{
-  position: absolute;
-  bottom: 35px;
 }

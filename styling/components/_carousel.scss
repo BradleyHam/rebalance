@@ -1,7 +1,7 @@
 
 // SPLIDE
 .splide{
-  padding: 0 $gutter;
+  padding: 100px $gutter;
   @media(max-width: $bp-tablet){
     padding: 0 $tablet-gutter;
   }
@@ -15,7 +15,7 @@
   line-height: 1.5;
   font-weight: 300;
   opacity: .7;
-  padding-top: 100px;
+ 
 }
 .splide__pagination{
   position: relative;

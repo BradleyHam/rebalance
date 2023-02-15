@@ -1,20 +1,17 @@
 .services{
     display: flex;
     flex-wrap: wrap;
-    margin: 0 $gutter $section-gap;
-    padding-top: $section-gap;
+    padding: $section-gap  $gutter;
     gap: 20px;
-
+    background: $tertiary-color;
     @media(max-width: $bp-tablet){
-        margin: 0 $tablet-gutter $tablet-section-gap;
-        padding-top: $tablet-section-gap;
+        padding:$tablet-section-gap $tablet-gutter;
     }
     @media(max-width: $bp-mobile){
-        margin: 80px $mobile-gutter;
+        padding: 80px $mobile-gutter;
     }
 }
 .services-card{
-    // width: calc(1200/3);
     flex: 1;
     min-width: 300px;
 }
@@ -25,6 +22,7 @@
     height: 250px;
     object-fit: cover;
     display: block;
+
 }
 .services-card__image-container{
     position: relative;
