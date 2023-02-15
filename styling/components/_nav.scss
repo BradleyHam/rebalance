@@ -74,8 +74,6 @@
     margin-right: -300px;
     visibility: hidden;
     transition: margin-right .5s ease;
- 
-    
   }
   .nav-active .nav__list--mobile{
     display: block;
@@ -93,10 +91,12 @@
     margin-right: 0px;
     visibility: inherit;
     z-index: 10; 
+   
   }
   .nav__list--mobile a{
     color: $text-color;
     text-decoration: none;
+    
   }
   .hamburger{
     z-index: 20;
@@ -108,4 +108,8 @@
   .hamburger-inner, .hamburger-inner::before, .hamburger-inner::after{
     background: $feature-color!important;
   }
+}
+ul .secondary-button{
+  position: absolute;
+  bottom: 35px;
 }

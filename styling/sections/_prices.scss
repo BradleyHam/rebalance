@@ -39,9 +39,11 @@
    font-family: $heading-font;
    opacity: .9;
 }
-.prices-card__prices{
-    margin-top: auto;   
-}
-.prices-card__price:last-child{
+
+.price-card__bottom{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: flex-end;
     margin-top: auto;
 }

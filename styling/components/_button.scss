@@ -21,3 +21,17 @@
     color: $text-color;
     font-weight: bold;
 }
+.secondary-button{
+    font-weight: 400;
+    font-size: 14px;
+    cursor: pointer;
+    background: transparent;
+    text-transform: uppercase;
+    // height: 30px;
+    padding-bottom: 5px;
+    font-family: $body-font;
+    cursor: pointer;
+    color: $text-color;
+    border: none;
+    border-bottom: 1px solid black;
+}
