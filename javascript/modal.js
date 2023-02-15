@@ -3,6 +3,9 @@ let closeButton = document.querySelector('.modal__close');
 let overlay = document.getElementById('overlay');
 let modal = document.getElementById('modal');
 let serviceButtons = document.getElementsByClassName("services-card__image-container");
+let secondaryButtons = document.querySelectorAll('.secondary-button');
+
+
 let serviceButtonArray = Array.from(serviceButtons);
 
 bookButtons.forEach(button => {
@@ -25,4 +28,11 @@ serviceButtonArray.forEach(button => {
         overlay.classList.toggle('active');
         modal.classList.toggle('active');
     });
+})
+
+secondaryButtons.forEach(button => {
+    button.addEventListener('click', () => {
+        overlay.classList.toggle('active');
+        modal.classList.toggle('active');
+    })
 })

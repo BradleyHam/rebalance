@@ -2,6 +2,7 @@
     height: calc(100vh - 120px);
     background: $primary-color;
     display: flex;
+    margin-top: 80px;
 }
 
 @media(max-width: $bp-tablet){
@@ -13,9 +14,12 @@
 .hero__text{
      flex: 5;
      margin-left: $gutter;
-     margin-top: 150px;
+     margin-top: 130px;
      display: flex;
      flex-flow: column;
+     @media(max-width: 1200px){
+        margin-top: 80px;
+    }
     @media(max-width: $bp-tablet){
         margin:50px $tablet-gutter;
         margin-top: 50px;

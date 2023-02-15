@@ -1328,8 +1328,10 @@ body {
 .nav {
   height: 80px;
   z-index: 10;
+  width: 100%;
   background: #3a6244;
-  box-shadow: 0 1px 3px #00000026;
+  position: fixed;
+  top: 0;
 }
 
 .nav__container {
@@ -1535,11 +1537,25 @@ ul .secondary-button {
   position: relative;
 }
 
+@media (max-width: 1024px) {
+  #modal__content {
+    flex-flow: column;
+  }
+}
+
 .modal__text {
   width: 500px;
   flex: 1;
   padding: 50px;
   font-size: 22px;
+}
+
+@media (max-width: 1024px) {
+  .modal__text {
+    flex: initial;
+    place-self: center;
+    margin: auto;
+  }
 }
 
 .modal__image {
@@ -1548,6 +1564,12 @@ ul .secondary-button {
   object-fit: cover;
   border-radius: 10px 0 0 10px;
   flex: 1;
+}
+
+@media (max-width: 1024px) {
+  .modal__image {
+    display: none;
+  }
 }
 
 .modal__close {
@@ -1626,6 +1648,7 @@ ul .secondary-button {
 .hero {
   height: calc(100vh - 120px);
   background: #3a6244;
+  margin-top: 80px;
   display: flex;
 }
 
@@ -1639,9 +1662,15 @@ ul .secondary-button {
 .hero__text {
   flex-flow: column;
   flex: 5;
-  margin-top: 150px;
+  margin-top: 130px;
   margin-left: 80px;
   display: flex;
+}
+
+@media (max-width: 1200px) {
+  .hero__text {
+    margin-top: 80px;
+  }
 }
 
 @media (max-width: 1024px) {
