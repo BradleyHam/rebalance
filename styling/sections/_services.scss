@@ -1,8 +1,5 @@
 .services{
-    display: flex;
-    flex-wrap: wrap;
     padding: $section-gap  $gutter;
-    gap: 20px;
     background: $tertiary-color;
     @media(max-width: $bp-tablet){
         padding:$tablet-section-gap $tablet-gutter;
@@ -10,6 +7,14 @@
     @media(max-width: $bp-mobile){
         padding: 80px $mobile-gutter;
     }
+}
+.services__section-title{
+    margin-bottom: 35px;
+}
+.services__content{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
 }
 .services-card{
     flex: 1;
@@ -22,13 +27,12 @@
     height: 250px;
     object-fit: cover;
     display: block;
-
 }
 .services-card__image-container{
     position: relative;
 }
 .services-card__image-container::after{
-    content: 'ff';
+    content: '';
     display: block;
     position: absolute;
     background: black;
@@ -53,9 +57,10 @@
     transform: translate(50%, -50%);
     z-index: 3;
     font-family: $body-font;
-    color: $feature-color;
+    color: $tertiary-color;
     font-weight: 300;
     font-size: 18px;
+    letter-spacing: 2px;
 }
 
 .services-card__title{

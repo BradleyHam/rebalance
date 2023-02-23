@@ -11,13 +11,13 @@
     <nav class="desktop-nav nav">
         <div class="container nav__container">
         <ul class="nav__list">
-            <li class="nav__list--item active"><a href="#home">Home</a></li>
+            <li class="nav__list--item"><a href="#hero">Home</a></li>
             <li class="nav__list--item "><a href="#services">Services</a></li>
             <li class="nav__list--item "><a href="#about">About</a></li>
             <li class="nav__list--item "><a href="#prices">Prices</a></li>  
           </ul>
           <div class="nav__logo">
-            <img src="/Logo-small.b40c1fe4.png" alt="">
+            <img id="logo" class="logo" src="/logo.d4f8fe33.png" alt="">
           </div>
           <div class="nav__right-side">
             <a href="https://www.facebook.com/ibrowsnbeauty">
@@ -26,9 +26,7 @@
             <a href="https://www.instagram.com/rebalancewellness_/">
               <img class="nav__right-side__social-icon nav__right-side__social-icon--instagram" src="/instagram.65e9cc5b.png" alt="">  
             </a>
-      
                 <div class="nav__right-side__button button book-button">book Now</div> 
-       
             </div>
         </div>
     </nav>
@@ -42,7 +40,7 @@
                 <img class="nav__right-side__social-icon nav__right-side__social-icon--instagram" src="/instagram.65e9cc5b.png" alt="">  
               </a></div>
           <div class="nav__logo">
-            <img src="/Logo-small.b40c1fe4.png" alt="">
+          
           </div>
           <div id="nav-right-side" class="nav__right-side list-active"> 
             <button id="hamburger" class="hamburger hamburger--collapse" type="button">
@@ -52,7 +50,8 @@
               </button> 
 
               <div class="nav__list--mobile">
-                <img src="/Logo-small.b40c1fe4.png" alt="">
+                <img id="logo" class="logo" src="/logo.d4f8fe33.png" alt="">
+           
                 <ul>
                 <li class="nav__list--item active"><a href="#home">Home</a></li>
                 <li class="nav__list--item "><a href="#services">Services</a></li>
@@ -60,16 +59,16 @@
                 <li class="nav__list--item "><a href="#prices">Prices</a></li>
                </ul> 
                 <div class="secondary-buttons">
-                  <div class="button">book now</div> 
-                
+                  <div class="button secindary-button">book now</div> 
                 </div>
               </div>  
 
             </div>
         </div>
     </nav>
+  
 
-    <section class="hero">
+    <section id="hero" class="hero">
         <div class="hero__text">
             <h1 class="hero__text--heading">Queenstown Mobile Massage & Yoga Services</h1>
             <p class="hero__text--p">
@@ -84,9 +83,13 @@
       </div>
       </section>
 
-   
 
     <section id="services" class="services">
+      <div class="services__section-title">
+        <h4>RELEASING TENSION, RESTORING BALANCE</h4>
+        <h2>My Offerings</h2>
+      </div>
+      <div class="services__content">
       <div class="services-card">
         <div class="services-card__image-container">
         <img class="services-card__image" src="/massage.769b08c0.png" alt="service image">
@@ -108,14 +111,16 @@
         <h3 class="services-card__title">Reiki</h3>
         <p class="services-card__description">Experience energy healing with our Reiki services. Our solo practitioner uses gentle touch to channel positive energy, reducing stress and promoting relaxation. Book now for a unique and rejuvenating Reiki session</p>
       </div>
+    </div>
     </section>
 
     <section id="about" class="about">
+    
       <div class="about__container">
       <img class="about__image" src="/about-image%20cropped.847e1c8d.jpeg">
       <div class="about__text">
-        <h2 class="about__heading">“Meet Our Yin Yoga Teacher and
-          Massage Therapist”</h2>
+        <h2 class="about__heading">Meet Our Yin Yoga Teacher and <br>
+          Massage Therapist</h2>
           <p class="about__description">
             “Our yin yoga teacher and massage therapist is a dedicated practitioner with years of experience in both fields. They have a deep understanding of the human body and the ability to use this knowledge to help individuals find balance, both physically and mentally. Through their yin yoga classes, they guide students in a practice that emphasizes deep stretches and relaxation, helping to release tension and stress from the body and mind. In addition, as a massage therapist, they are skilled in a variety of techniques, including Swedish, deep tissue, and trigger point therapy, to help clients alleviate pain and discomfort. Whether you’re looking to deepen your yoga practice or simply relax and unwind, our yin yoga teacher and massage therapist is here to help.”
           </p>
@@ -125,6 +130,13 @@
 
 
     <section id="prices" class="prices">
+   
+        <div class="">
+        <h4>Relax, Restore, and Recharge</h4>
+        <h2> Pricing Options</h2>
+      </div>
+      <div class="prices__container">
+
       <div class="prices-card">
         <h3 class="prices-card__title">Sweedish Massage</h3>
         <p class="prices-card__description">
@@ -178,9 +190,7 @@
         </p>
         <div class="price-card__bottom">
         <p class="prices-card__price"> 15 min | $30</p>
-    
       </div>
-     
         </div>      
       <div class="prices-card">
         <h3 class="prices-card__title">Foot Delux Add On</h3>
@@ -190,15 +200,36 @@
         <div class="price-card__bottom">
         <p class="prices-card__price">15 min | $50</p>
       </div>
-        </div>      
+        </div>   
+      </div>   
     </section>
 
     <section class="splide" aria-label="Splide Basic HTML Example">
+      <div class="quotation-mark">
+            <svg fill="#426B58" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="800px" height="800px" viewbox="0 0 98.829 98.829" xml:space="preserve">
+          <g>
+            <g>
+              <path d="M96.76,41.603C91.511,22.831,78.562,9.204,65.975,9.204c-1.011,0-2.021,0.088-3.005,0.262
+                c-0.558,0.098-1.046,0.426-1.348,0.902c-0.301,0.479-0.386,1.061-0.233,1.605l2.591,9.268c0.25,0.895,1.113,1.5,2.01,1.459
+                l0.206-0.004c4.668,0,13.199,6.996,17.548,22.545c0.172,0.617,0.335,1.248,0.492,1.906c-4.882-2.416-10.706-2.975-15.98-1.506
+                C56.358,48.97,49.388,61.356,52.714,73.252c2.696,9.639,11.563,16.373,21.563,16.373c2.037,0,4.071-0.281,6.046-0.834
+                c7.846-2.193,13.745-8.707,16.611-18.338C99.521,61.764,99.456,51.249,96.76,41.603z"></path>
+              <path d="M14.088,9.206c-1.009,0-2.02,0.086-3.003,0.26c-0.557,0.096-1.046,0.426-1.347,0.902
+                c-0.301,0.479-0.386,1.061-0.234,1.605l2.592,9.268c0.25,0.895,1.097,1.5,2.01,1.459l0.204-0.004
+                c4.668,0,13.2,6.996,17.549,22.545c0.173,0.621,0.336,1.252,0.492,1.906c-4.884-2.416-10.706-2.975-15.98-1.506
+                C4.475,48.97-2.497,61.356,0.831,73.252c2.696,9.639,11.563,16.373,21.563,16.373c2.037,0,4.071-0.281,6.047-0.834
+                c7.845-2.193,13.744-8.707,16.611-18.338c2.586-8.689,2.522-19.205-0.175-28.852C39.625,22.831,26.678,9.206,14.088,9.206z"></path>
+            </g>
+          </g>
+        </svg>
+      </div>
+    
       <div class="splide__track">
         <ul class="splide__list">
           <li class="splide__slide">
             <blockquote class="testimonial">
               <p class="quote-section__quote__p">Had my first massage with RE this morning and it was unbelievable! I feel so refreshed and my body feels after having such stiff muscles and knots after being quite active. I feel like a new woman thank you again!</p>
+     
               <cite>- Siena Lawson</cite>
             </blockquote>
           </li>
@@ -227,7 +258,7 @@
 
 
     <footer class="footer">
-      <h2 class="footer__heading">Get in Touch !!!</h2>
+      <h3 class="footer__heading">Get in Touch !!!</h3>
       <div class="footer-content">
         <div class="footer-content__social">
           <div class="footer-content__social-row">
@@ -254,19 +285,36 @@
               </div>
               <div class="footer-content__social--phone-number">0226132936</div>
             </a>
-  
           </div>
         </div>
-        <img class="footer-content__logo" src="/Logo-small.b40c1fe4.png" alt="">
+        
+        <img class="footer-content__logo" src="/logo.d4f8fe33.png" alt="">
       </div>
     </footer>
 
     <div id="overlay" class=""></div>
     <div id="modal" class="">
       <div id="modal__content">
-        <!-- Your content goes here -->
-        <img class="modal__image" src="/massage-90deg.cddbee27.jpeg">
-        <p class="modal__text">Thank you for your interest in booking a massage session. To make a reservation, please call <strong>0226132936</strong>  or email <strong>rebalancewelness@gmail.com</strong>. Thanks! </p>
+        <div class="modal__text">
+          <h4>Get in Touch</h4>
+          <h2>Call to Book</h2>
+          <p>
+            Whether you’re looking to book your perfect honeymoon experience, your first ever massage or have no idea what to book, just give us a call and our therapists will talk you through everything! Feel free to give us a call or alternatively fill in the form below and a member of the team will get back in touch with you as soon as we can.
+          </p>
+          <h2>+64 (0) 226132936</h2>
+        </div>
+        <div class="modal__form-container">
+          <form>
+            <input type="text" id="name" name="name" placeholder="Name">
+            <input type="email" id="email" name="email" placeholder="Email">
+            <input type="tel" id="phone" name="phone" placeholder="Phone">
+            <textarea id="message" name="message" placeholder="Message"></textarea>
+
+            <input type="submit" value="Submit Enquiry">
+      
+          </form>
+        </div>
+      
       </div>
       <div class="modal__close">
         <img src="/close.01951f21.png" alt="">

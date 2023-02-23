@@ -1,12 +1,28 @@
 @import url('https://fonts.googleapis.com/css2?family=Great+Vibes&family=Lato:wght@300;400;700&family=PT+Serif+Caption&display=swap');
-
+@font-face {
+    font-family: "MyFont";
+    src: url("../fonts/MyFont.otf") format("truetype");
+  }
 /* COLORS */
-$primary-color: #3A6244;
-$feature-color:  #F1E9D9;
+// Darker green: #426B58;
+// Darker purple: #695F87
+// Lighter green: #C6E5D9
+// lighterpurple: #D9C9E2
+
+$primary-color: #426B58;
+$feature-color:  #695F87;
 $text-color: #333;
-$tertiary-color: #fcf4e5;
+$background-color: #F7F3E9;
+$secondary-text-color: white;
+$tertiary-color: white;
+
+// $primary-color: #3A6244;
+// $feature-color:  #F1E9D9;
+// $text-color: #333;
+// $tertiary-color: #fcf4e5;
+
 /* TYPOGRAPHY */
-$heading-font:'PT Serif Caption', serif;
+$heading-font:'MyFont', serif;
 $feature-font:'Great Vibes', cursive;
 $body-font:'Lato', sans-serif;
 /* SPACING */

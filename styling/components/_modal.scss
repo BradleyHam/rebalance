@@ -11,60 +11,51 @@
         display: initial
     }
   }
-  
   #modal {
     position: fixed;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    background-color: white;
     border-radius: 10px;
     z-index: 11;
     display: none;
-    height: 50vh;
+   
     min-width: 50vw;
-  
     &.active{
         display: initial
     }
+    @media(max-width: $bp-tablet){
+      height: 100vh;
+      
+    }
   }
-  
   #modal__content {
     border-radius: 10px;
     display: flex;
     align-items: center;
     position: relative;
     height: 100%;
-    background: $feature-color;
+    background: $tertiary-color;
     @media(max-width: $bp-tablet){
       flex-flow: column;
-    
+
     }
   }
-  
   .modal__text{
     width: 500px;
-    font-size: 22px;
-    flex:1;
-    padding: 50px;
+    flex:2;
+    padding: 80px;
     @media(max-width: $bp-tablet){
       flex: initial;
       align-self: center;
       justify-self: center;
       margin: auto;
     }
-    
   }
-  .modal__image{
-    flex: 1;
-    height: 100%;
-    width: auto;
-    object-fit: cover;
-    border-radius: 10px 0 0 10px;
-    @media(max-width: $bp-tablet){
-      display: none;
-    }
+  .modal__text p{
+    padding: 15px 0;
   }
+ 
   .modal__close{
     position: absolute;
     right: 20px;
@@ -74,4 +65,9 @@
   }
   .modal__close img{
     height: 18px;
+  }
+  .modal__form-container{
+    @media(max-width: $bp-tablet){
+      display: none!important;
+    }
   }

@@ -1,12 +1,14 @@
 
 // SPLIDE
 .splide{
+  background: $background-color;
   padding: 100px $gutter;
+  text-align: center;
   @media(max-width: $bp-tablet){
-    padding: 0 $tablet-gutter;
+    padding: 80px $tablet-gutter;
   }
   @media(max-width: $bp-mobile){
-    padding: 0 $mobile-gutter;
+    padding: 100px $mobile-gutter;
   }
 }
 .splide__slide{
@@ -19,67 +21,32 @@
 }
 .splide__pagination{
   position: relative;
-  padding-top: 40px;
+  padding-top: 60px;
 }
 .splide__pagination__page.is-active{
   background: black;
-  opacity: 1;
+  opacity: .4;
 }
 .splide__arrow{
-  background: $feature-color;
+  background: $background-color;
 }
 
 .splide__pagination__page{
   background:black;
   opacity: .2;
 }
+.quote-section__quote__p{
+  margin-bottom: 20px;
+}
 
+cite{
+  color: $primary-color;
+}
+.quotation-mark svg{
+  height: 50px;
+  width:100%;
+  margin-bottom: 20px;
+  opacity: .7;
 
+}
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-// ----------
-
-// .carousel {
-
-// }
-
-// .carousel-item {
-//   width: 100%;
-//   height: 100%;
-//     border: 1px solid red;
-// }
-
-// .carousel-item.active {
-
-// }
-
-// .carousel-prev, .carousel-next {
-//   position: absolute;
-//   top: 50%;
-//   transform: translateY(-50%);
-//   background-color: white;
-//   padding: 1rem 2rem;
-//   border: 1px solid #ccc;
-//   cursor: pointer;
-// }
-
-// .carousel-prev {
-//   left: 0;
-// }
-
-// .carousel-next {
-//   right: 0;
-// }

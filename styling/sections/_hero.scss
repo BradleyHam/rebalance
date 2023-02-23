@@ -3,6 +3,9 @@
     background: $primary-color;
     display: flex;
     margin-top: 80px;
+    h1{
+        color: $secondary-text-color;
+    }
 }
 
 @media(max-width: $bp-tablet){
@@ -34,10 +37,8 @@
 }
 .hero__text--p{
     margin-top: 38px;
-    font-size: 16px;
-    color: $feature-color;
+    color: $secondary-text-color;
     @media(max-width: $bp-tablet){
-        font-size: 18px;
         margin-top: 30px;
     }
 }

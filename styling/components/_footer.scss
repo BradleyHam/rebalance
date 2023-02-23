@@ -1,6 +1,6 @@
 .footer{
     background: $primary-color;
-    color: $feature-color;
+    color: $secondary-text-color;
     padding: 80px $gutter;
     @media(max-width: $bp-tablet){
         padding: 80px $tablet-gutter;
@@ -11,36 +11,57 @@
 }
 .footer__heading{
     font-weight: 300;
+    opacity: 1;
+    @media(max-width: $bp-tablet) {
+        font-size: 18px;
+    }
 }
 .footer-content__social{
     display: flex;
     flex-flow: column;
     gap: 15px;
+    @media(max-width: $bp-tablet){
+        gap: 10px;
+    }
 }
 .footer-content{
     display: flex;
     justify-content: space-between;
     align-items: center;
     margin-top: 20px;
+
 }
 .footer-content__social-row{
-    width: 300px
+    font-size: 14px;
+    @media(max-width: $bp-tablet){
+        font-size: 12px;
+    }
+    
 }
 .footer-content__social-row a{
     display: flex;
     gap: 10px;
     align-items: center;
     font-family: $body-font;
-    color: $feature-color;
+    color: $secondary-text-color;
     text-decoration: none;
+    @media(max-width: $bp-tablet){
+        gap: 5px;
+    }
 }
 .icon-container{
     width: 30px;
+    display: flex;
+    justify-content: center;
 }
 .footer-content__social--icon-image{
     height: 20px;
 }
 .footer-content__logo{
-    transform: scale(1.2);
     padding-bottom: 40px;
+    height: 150px;
+    @media(max-width: $bp-tablet){
+        height: 100px;
+        padding-bottom: 0px;
+    }
 }

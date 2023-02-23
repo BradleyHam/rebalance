@@ -1,6 +1,7 @@
+@import "./base/variables";
 @import "./vendors/splide-min";
 
-@import "./base/variables";
+
 @import "./base/reset";
 @import "./base/spacing";
 @import "./base/typography";
@@ -12,9 +13,11 @@
 @import "./components/carousel";
 @import "./components/modal";
 @import "./components/footer";
+@import "./components/form";
+@import "./components/logo";
 
 @import "./sections/hero";
-@import "./sections/quote";
+
 @import "./sections/services";
 @import "./sections/about";
 @import "./sections/prices";
