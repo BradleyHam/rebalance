@@ -21,7 +21,7 @@
 }
 .splide__pagination{
   position: relative;
-  padding-top: 60px;
+  padding-top: 40px;
 }
 .splide__pagination__page.is-active{
   background: black;
@@ -37,6 +37,11 @@
 }
 .quote-section__quote__p{
   margin-bottom: 20px;
+  width: 70%;
+  margin: 0 auto 20px;
+  @media(max-width: $bp-tablet){
+    width: 90%;
+  }
 }
 
 cite{
@@ -50,3 +55,9 @@ cite{
 
 }
 
+#stars{
+  padding-bottom: 20px;
+}
+.testimonials h2{
+  padding-bottom: 20px;
+}

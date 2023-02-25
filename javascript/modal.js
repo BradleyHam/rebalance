@@ -5,7 +5,6 @@ let modal = document.getElementById('modal');
 let serviceButtons = document.getElementsByClassName("services-card__image-container");
 let secondaryButtons = document.querySelectorAll('.secondary-button');
 
-
 let serviceButtonArray = Array.from(serviceButtons);
 
 bookButtons.forEach(button => {
@@ -19,8 +18,9 @@ bookButtons.forEach(button => {
 closeButton.addEventListener('click', () => {
     overlay.classList.remove('active');
     modal.classList.remove('active');
+    hamburger.classList.toggle('is-active');
+    navRightSide.classList.toggle('nav-active');
 });
-console.log(serviceButtonArray)
 
 serviceButtonArray.forEach(button => {
     button.addEventListener('click', () => {

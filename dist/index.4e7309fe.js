@@ -15,8 +15,9 @@ bookButtons.forEach((button)=>{
 closeButton.addEventListener("click", ()=>{
     overlay.classList.remove("active");
     modal.classList.remove("active");
+    hamburger.classList.toggle("is-active");
+    navRightSide.classList.toggle("nav-active");
 });
-console.log(serviceButtonArray);
 serviceButtonArray.forEach((button)=>{
     button.addEventListener("click", ()=>{
         console.log("hi");

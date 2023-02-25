@@ -12,7 +12,8 @@
         padding: $tablet-section-gap $tablet-gutter;
     }
     @media(max-width: $bp-mobile){
-        margin: 40px $mobile-gutter;
+        margin: 0;
+        padding: $tablet-section-gap $mobile-gutter;
     }
 }
 .prices__container{

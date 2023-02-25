@@ -1,40 +1,58 @@
 .footer{
     background: $primary-color;
     color: $secondary-text-color;
-    padding: 80px $gutter;
-    @media(max-width: $bp-tablet){
-        padding: 80px $tablet-gutter;
+    padding: 0;
+    p{
+        color: $background-color;
     }
     @media(max-width: $bp-mobile){
-        padding: 80px $mobile-gutter;
+
     }
 }
 .footer__heading{
     font-weight: 300;
     opacity: 1;
+    margin-bottom: 10px;
     @media(max-width: $bp-tablet) {
         font-size: 18px;
     }
 }
-.footer-content__social{
-    display: flex;
-    flex-flow: column;
-    gap: 15px;
-    @media(max-width: $bp-tablet){
-        gap: 10px;
-    }
-}
 .footer-content{
     display: flex;
-    justify-content: space-between;
     align-items: center;
-    margin-top: 20px;
-
+    flex-flow: row;
+    margin-top: 0;
+    @media(max-width: 725px){
+        flex-flow: column;
+        align-items: flex-start;
+    }
+    &__social{
+        display: flex;
+        flex-flow: column;
+        gap: 15px;
+        flex:1;
+        padding: 40px 80px;
+        @media(max-width: $bp-tablet){
+            gap: 10px;
+            padding: 60px;
+            width: 100%;
+        }
+        @media(max-width: $bp-mobile){
+            gap: 10px;
+            padding: 0px;
+        }
+        img{
+            flex: 1;
+        
+        }
+    }
 }
 .footer-content__social-row{
     font-size: 14px;
+    width: 220px;
     @media(max-width: $bp-tablet){
         font-size: 12px;
+      
     }
     
 }
@@ -56,12 +74,33 @@
 }
 .footer-content__social--icon-image{
     height: 20px;
+    object-fit: contain;
 }
 .footer-content__logo{
     padding-bottom: 40px;
-    height: 150px;
     @media(max-width: $bp-tablet){
         height: 100px;
         padding-bottom: 0px;
     }
+}
+#map{
+    width: 50%;
+    height: 345px;
+    object-fit: cover;
+   
+    @media(max-width: 725px){
+        width: 100vw;
+        order: -1;
+    }
+}
+footer img.logo{
+    margin-left: -10px;
+    margin-bottom: -10px;
+    width: 100px;
+}
+.social-rows{
+    display: flex;
+    flex-flow: column;
+    gap: 10px;
+    padding: 20px 0;
 }

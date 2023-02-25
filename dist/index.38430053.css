@@ -453,6 +453,11 @@ body {
   position: relative;
 }
 
+hr {
+  color: #f4f5f7;
+  opacity: .1;
+}
+
 .button {
   color: #fff;
   height: 35px;
@@ -1513,7 +1518,7 @@ body {
   }
 
   .nav__list--mobile a {
-    color: #f7f3e9;
+    color: #f4f5f7;
     text-decoration: none;
   }
 
@@ -1522,13 +1527,13 @@ body {
   }
 
   .nav-active .hamburger-inner, .nav-active .hamburger-inner:before, .nav-active.hamburger-inner:after, .hamburger-inner, .hamburger-inner:before, .hamburger-inner:after {
-    background: #f7f3e9 !important;
+    background: #f4f5f7 !important;
   }
 }
 
 .splide {
   text-align: center;
-  background: #f7f3e9;
+  background: #f4f5f7;
   padding: 100px 80px;
 }
 
@@ -1553,7 +1558,7 @@ body {
 }
 
 .splide__pagination {
-  padding-top: 60px;
+  padding-top: 40px;
   position: relative;
 }
 
@@ -1563,7 +1568,7 @@ body {
 }
 
 .splide__arrow {
-  background: #f7f3e9;
+  background: #f4f5f7;
 }
 
 .splide__pagination__page {
@@ -1572,7 +1577,14 @@ body {
 }
 
 .quote-section__quote__p {
-  margin-bottom: 20px;
+  width: 70%;
+  margin: 0 auto 20px;
+}
+
+@media (max-width: 1024px) {
+  .quote-section__quote__p {
+    width: 90%;
+  }
 }
 
 cite {
@@ -1584,6 +1596,10 @@ cite {
   width: 100%;
   opacity: .7;
   margin-bottom: 20px;
+}
+
+#stars, .testimonials h2 {
+  padding-bottom: 20px;
 }
 
 #overlay {
@@ -1613,9 +1629,10 @@ cite {
   display: initial;
 }
 
-@media (max-width: 1024px) {
+@media (max-width: 450px) {
   #modal {
     height: 100vh;
+    width: 100vw;
   }
 }
 
@@ -1645,6 +1662,14 @@ cite {
     flex: initial;
     place-self: center;
     margin: auto;
+    padding: 40px;
+  }
+}
+
+@media (max-width: 450px) {
+  .modal__text {
+    width: initial;
+    padding: 30px;
   }
 }
 
@@ -1673,23 +1698,16 @@ cite {
 .footer {
   color: #fff;
   background: #426b58;
-  padding: 80px;
+  padding: 0;
 }
 
-@media (max-width: 1024px) {
-  .footer {
-    padding: 80px 60px;
-  }
-}
-
-@media (max-width: 450px) {
-  .footer {
-    padding: 80px 30px;
-  }
+.footer p {
+  color: #f4f5f7;
 }
 
 .footer__heading {
   opacity: 1;
+  margin-bottom: 10px;
   font-weight: 300;
 }
 
@@ -1699,26 +1717,49 @@ cite {
   }
 }
 
+.footer-content {
+  flex-flow: row;
+  align-items: center;
+  margin-top: 0;
+  display: flex;
+}
+
+@media (max-width: 725px) {
+  .footer-content {
+    flex-flow: column;
+    align-items: flex-start;
+  }
+}
+
 .footer-content__social {
   flex-flow: column;
+  flex: 1;
   gap: 15px;
+  padding: 40px 80px;
   display: flex;
 }
 
 @media (max-width: 1024px) {
   .footer-content__social {
+    width: 100%;
     gap: 10px;
+    padding: 60px;
   }
 }
 
-.footer-content {
-  justify-content: space-between;
-  align-items: center;
-  margin-top: 20px;
-  display: flex;
+@media (max-width: 450px) {
+  .footer-content__social {
+    gap: 10px;
+    padding: 0;
+  }
+}
+
+.footer-content__social img {
+  flex: 1;
 }
 
 .footer-content__social-row {
+  width: 220px;
   font-size: 14px;
 }
 
@@ -1751,10 +1792,10 @@ cite {
 
 .footer-content__social--icon-image {
   height: 20px;
+  object-fit: contain;
 }
 
 .footer-content__logo {
-  height: 150px;
   padding-bottom: 40px;
 }
 
@@ -1763,6 +1804,32 @@ cite {
     height: 100px;
     padding-bottom: 0;
   }
+}
+
+#map {
+  width: 50%;
+  height: 345px;
+  object-fit: cover;
+}
+
+@media (max-width: 725px) {
+  #map {
+    width: 100vw;
+    order: -1;
+  }
+}
+
+footer img.logo {
+  width: 100px;
+  margin-bottom: -10px;
+  margin-left: -10px;
+}
+
+.social-rows {
+  flex-flow: column;
+  gap: 10px;
+  padding: 20px 0;
+  display: flex;
 }
 
 form {
@@ -1781,14 +1848,14 @@ input[type="text"], input[type="email"], input[type="tel"], textarea {
 
 input[type="submit"] {
   color: #333;
-  height: 35px;
   text-transform: uppercase;
   cursor: pointer;
   letter-spacing: 2px;
-  background: none;
+  background: #fff;
   border: 1px solid #333;
   justify-content: center;
   align-items: center;
+  padding: 10px;
   font-family: Lato, sans-serif;
   font-size: 14px;
   font-weight: 300;
@@ -1807,7 +1874,7 @@ input[type="text"]::placeholder, input[type="email"]::placeholder, input[type="t
 
 .modal__form-container {
   height: 100%;
-  background: #f7f7f7;
+  background: #f4f5f7;
   border-radius: 0 10px 10px 0;
   flex: 1;
   justify-content: center;
@@ -2016,7 +2083,7 @@ input[type="text"]::placeholder, input[type="email"]::placeholder, input[type="t
 }
 
 .about {
-  background: #f7f3e9;
+  background: #f4f5f7;
   position: relative;
 }
 
@@ -2123,7 +2190,8 @@ input[type="text"]::placeholder, input[type="email"]::placeholder, input[type="t
 
 @media (max-width: 450px) {
   .prices {
-    margin: 40px 30px;
+    margin: 0;
+    padding: 80px 30px;
   }
 }
 

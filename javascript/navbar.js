@@ -8,11 +8,3 @@ hamburger.addEventListener('click', (e) => {
     hamburger.classList.toggle('is-active');
     navRightSide.classList.toggle('nav-active');
 });
-
-mobileListItems.forEach(item => {
-    item.addEventListener('click', (e) => {
-        console.log('running')
-        hamburger.classList.toggle('is-active');
-        navRightSide.classList.toggle('nav-active');
-    });
-})
