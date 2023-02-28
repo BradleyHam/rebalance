@@ -1,0 +1,2 @@
+const hamburger=document.getElementById("hamburger"),navRightSide=document.getElementById("nav-right-side"),mobileNav=document.getElementById("mobile-nav");let mobileListItems=document.querySelectorAll(".nav__list--mobile .nav__list--item");hamburger.addEventListener("click",(e=>{e.preventDefault(),hamburger.classList.toggle("is-active"),navRightSide.classList.toggle("nav-active")}));
+//# sourceMappingURL=index.daa04573.js.map
