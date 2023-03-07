@@ -41,11 +41,14 @@
             gap: 10px;
             padding: 0px;
         }
-        img{
-            flex: 1;
-        
-        }
     }
+}
+.footer-content__social img{
+    flex: 1;
+    @media (max-width: $bp-tablet) {
+        align-self: center;
+    }
+  
 }
 .footer-content__social-row{
     font-size: 14px;
@@ -81,7 +84,7 @@
     @media(max-width: $bp-tablet){
         height: 100px;
         padding-bottom: 0px;
-    }
+    } 
 }
 #map{
     width: 50%;

@@ -1,1 +1,5 @@
-new Splide( '.splide' ).mount();
+ function mountCarousel(){
+    new Splide(".splide").mount();
+ }
+
+export default mountCarousel

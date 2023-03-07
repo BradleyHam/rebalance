@@ -1,1 +1,0 @@
-{"mappings":"AAAA,IAAIA,OAAQ,WAAYC","sources":["javascript/initializeCarousel.js"],"sourcesContent":["new Splide( '.splide' ).mount();"],"names":["Splide","mount"],"version":3,"file":"index.4098d0c4.js.map"}

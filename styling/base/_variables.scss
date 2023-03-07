@@ -3,12 +3,8 @@
     font-family: "MyFont";
     src: url("../fonts/MyFont.otf") format("truetype");
   }
-/* COLORS */
-// Darker green: #426B58;
-// Darker purple: #695F87
-// Lighter green: #C6E5D9
-// lighterpurple: #D9C9E2
 
+/* COLORS */
 $primary-color: #426B58;
 $feature-color:  #695F87;
 $text-color: #333;
@@ -16,21 +12,18 @@ $background-color: #f4f5f7;
 $secondary-text-color: white;
 $tertiary-color: white;
 
-// $primary-color: #3A6244;
-// $feature-color:  #F1E9D9;
-// $text-color: #333;
-// $tertiary-color: #fcf4e5;
-
 /* TYPOGRAPHY */
 $heading-font:'MyFont', serif;
 $feature-font:'Great Vibes', cursive;
 $body-font:'Lato', sans-serif;
+
 /* SPACING */
 $gutter: 80px;
 $tablet-gutter: 60px; 
 $mobile-gutter: 30px; 
 $section-gap: 200px;
-$tablet-section-gap:80px;
+$tablet-section-gap: 80px;
+
 // BREAKPOINTS
 $bp-tablet: 1024px;
 $bp-mobile: 450px;
