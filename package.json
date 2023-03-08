@@ -18,12 +18,7 @@
     "prettier": "^2.8.4",
     "sass": "^1.57.1"
   },
-    "targets": {
-      "default": {
-        "distDir": "./docs"
-      }
-    },
-  "scripts": {
+    "scripts": {
     "build": "parcel build index.html",
     "dev": "parcel index.html"
   },
