@@ -1,75 +1,84 @@
-.hero{
+.hero {
     height: calc(100vh - 120px);
     background: $primary-color;
     display: flex;
     margin-top: 80px;
-    h1{
+
+    h1 {
         color: $secondary-text-color;
     }
 }
 
-@media(max-width: $bp-tablet){
-    .hero{
+@media(max-width: $bp-tablet) {
+    .hero {
         flex-flow: column;
         height: initial;
     }
 }
-.hero__text{
-     flex: 5;
-     margin-left: $gutter;
-     margin-top: 130px;
-     display: flex;
-     flex-flow: column;
-     @media(max-width: 1200px){
+
+.hero__text {
+    flex: 5;
+    margin-left: $gutter;
+    margin-top: 130px;
+    display: flex;
+    flex-flow: column;
+
+    @media(max-width: 1200px) {
         margin-top: 80px;
     }
-    @media(max-width: $bp-tablet){
-        margin:50px $tablet-gutter;
+
+    @media(max-width: $bp-tablet) {
+        margin: 50px $tablet-gutter;
         margin-top: 50px;
         order: 1;
         text-align: left;
     }
-    @media(max-width: $bp-mobile){
+
+    @media(max-width: $bp-mobile) {
         margin: 50px $mobile-gutter;
         text-align: left;
         align-items: flex-start;
     }
 }
-.hero__text--p{
+
+.hero__text--p {
     margin-top: 38px;
     color: $secondary-text-color;
-    @media(max-width: $bp-tablet){
+
+    @media(max-width: $bp-tablet) {
         margin-top: 30px;
     }
 }
-.hero .button{
+
+.hero .button {
     margin-top: 75px;
-  
-    @media(max-width: $bp-tablet){
-        margin-top: 55px; 
+
+    @media(max-width: $bp-tablet) {
+        margin-top: 55px;
     }
 }
-.hero img{
+
+.hero img {
     clip-path: polygon(25% 0%, 100% 0%, 100% 100%, 25% 100%, 0% 100%);
     width: 600px;
-    @media(max-width: $bp-tablet){
+
+    @media(max-width: $bp-tablet) {
         clip-path: none;
         margin-top: -200px;
-        width: 100%;
+        width: 100vw;
         margin-top: 50px;
     }
 }
-.hero__image--container{
+
+.hero__image--container {
     overflow: hidden;
-    @media(max-width: 1200px){
-        margin-right: -100px;
-    }
-    @media(max-width: $bp-tablet){
+
+    @media(max-width: $bp-tablet) {
         height: 300px;
         z-index: 1;
         overflow: hidden;
         display: flex;
-        justify-content: center; 
+        justify-content: center;
         align-items: center;
     }
 }
