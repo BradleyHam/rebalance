@@ -1772,7 +1772,7 @@ cite {
 }
 
 .footer-content__social-row {
-  width: 220px;
+  width: 320px;
   font-size: 14px;
 }
 
@@ -1905,6 +1905,22 @@ input[type="text"]::placeholder, input[type="email"]::placeholder, input[type="t
 
 .logo {
   height: 100px;
+}
+
+.overlay {
+  position: relative;
+}
+
+.overlay:before {
+  content: "";
+  z-index: 5;
+  width: 100%;
+  height: 100%;
+  opacity: .2;
+  background-color: #000;
+  position: absolute;
+  top: 0;
+  left: 0;
 }
 
 .hero {
@@ -2156,12 +2172,8 @@ input[type="text"]::placeholder, input[type="email"]::placeholder, input[type="t
 
 .prices {
   background: #fff;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  gap: 40px 20px;
   margin: 0;
   padding: 200px 80px;
-  display: flex;
 }
 
 @media (max-width: 1024px) {
@@ -2179,8 +2191,8 @@ input[type="text"]::placeholder, input[type="email"]::placeholder, input[type="t
 
 .prices__container {
   flex-wrap: wrap;
-  justify-content: space-between;
-  gap: 40px 20px;
+  justify-content: flex-start;
+  gap: 40px 30px;
   display: flex;
 }
 
@@ -2226,6 +2238,19 @@ input[type="text"]::placeholder, input[type="email"]::placeholder, input[type="t
   margin-top: auto;
   padding-top: 20px;
   display: flex;
+}
+
+.package-prices {
+  margin: 0;
+  padding: 0;
+}
+
+.package-prices h2 {
+  padding-top: 40px;
+}
+
+.prices h2 {
+  padding-bottom: 40px;
 }
 
 /*# sourceMappingURL=index.38430053.css.map */
