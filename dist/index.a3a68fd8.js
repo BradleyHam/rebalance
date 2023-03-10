@@ -608,16 +608,16 @@ var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
 var _modal = require("./modal");
 var _modalDefault = parcelHelpers.interopDefault(_modal);
-var _navbar = require("./navbar");
-var _navbarDefault = parcelHelpers.interopDefault(_navbar);
+var _navbarJs = require("./navbar.js");
 console.log(registerEventListeners);
 function registerEventListeners() {
     (0, _modalDefault.default)();
-    (0, _navbarDefault.default)();
+    (0, _navbarJs.onHamburgerClick)();
+    (0, _navbarJs.mobileNavItemClicked)();
 }
 exports.default = registerEventListeners;
 
-},{"./modal":"39qvh","./navbar":"3uhCd","@parcel/transformer-js/src/esmodule-helpers.js":"fD7H8"}],"39qvh":[function(require,module,exports) {
+},{"./modal":"39qvh","@parcel/transformer-js/src/esmodule-helpers.js":"fD7H8","./navbar.js":"3uhCd"}],"39qvh":[function(require,module,exports) {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
 var _htmlelements = require("./HTMLElements");
@@ -683,17 +683,27 @@ exports.default = {
 },{"@parcel/transformer-js/src/esmodule-helpers.js":"fD7H8"}],"3uhCd":[function(require,module,exports) {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
+parcelHelpers.export(exports, "onHamburgerClick", ()=>onHamburgerClick);
+parcelHelpers.export(exports, "mobileNavItemClicked", ()=>mobileNavItemClicked);
 var _htmlelements = require("./HTMLElements");
 var _htmlelementsDefault = parcelHelpers.interopDefault(_htmlelements);
-const { hamburger , navRightSide  } = (0, _htmlelementsDefault.default);
+const { hamburger , navRightSide , mobileListItems  } = (0, _htmlelementsDefault.default);
 function onHamburgerClick() {
-    hamburger.addEventListener("click", (e)=>{
-        e.preventDefault();
-        hamburger.classList.toggle("is-active");
-        navRightSide.classList.toggle("nav-active");
+    hamburger.addEventListener("click", ()=>{
+        toggleMobileNav();
     });
 }
-exports.default = onHamburgerClick;
+function mobileNavItemClicked() {
+    mobileListItems.forEach((item)=>{
+        item.addEventListener("click", ()=>{
+            toggleMobileNav();
+        });
+    });
+}
+function toggleMobileNav() {
+    hamburger.classList.toggle("is-active");
+    navRightSide.classList.toggle("nav-active");
+}
 
 },{"./HTMLElements":"hpEuu","@parcel/transformer-js/src/esmodule-helpers.js":"fD7H8"}]},["jq4O7","svIyg"], "svIyg", "parcelRequirecd66")
 

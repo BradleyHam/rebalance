@@ -19,7 +19,7 @@
     "sass": "^1.57.1"
   },
     "scripts": {
-    "build": "parcel build index.html",
+    "build": "parcel build index.html --dist-dir docs --public-url './'",
     "dev": "parcel index.html"
   },
 
