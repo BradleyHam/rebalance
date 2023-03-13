@@ -24,8 +24,8 @@ function registerModalEventListeners(){
   closeButton.addEventListener("click", () => {
     overlay.classList.remove("active");
     modal.classList.remove("active");
-    hamburger.classList.toggle("is-active");
-    navRightSide.classList.toggle("nav-active");
+    hamburger.classList.remove("is-active");
+    navRightSide.classList.remove("nav-active");
   });
   
   serviceButtonArray.forEach((button) => {
