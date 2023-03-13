@@ -1,10 +1,11 @@
-body{
+body {
     background: $primary-color;
     position: relative;
-  
+    width: 100vw;
 }
+
 // maybe delete hr 
-hr{
+hr {
     color: $background-color;
     opacity: .1;
 }

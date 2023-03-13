@@ -1,14 +1,17 @@
+$logoBreak: 500px;
+
 .footer {
     background: $primary-color;
     color: $secondary-text-color;
     padding: 0;
+    padding-bottom: 20px;
 
     p {
         color: $background-color;
     }
 
     @media(max-width: $bp-mobile) {
-        padding: 80px 30px;
+        padding: 40px 30px 40px;
     }
 }
 
@@ -35,8 +38,9 @@
 
     &__social {
         display: flex;
-        flex-flow: column;
-        gap: 15px;
+        flex-flow: row;
+        justify-content: space-between;
+        width: 100%;
         flex: 1;
         padding: 40px 80px;
 
@@ -44,6 +48,11 @@
             gap: 10px;
             padding: 60px;
             width: 100%;
+
+        }
+
+        @media(max-width: $logoBreak) {
+            flex-flow: column;
         }
 
         @media(max-width: $bp-mobile) {
@@ -53,24 +62,28 @@
     }
 }
 
+.logoSide {
+    display: flex;
+    flex-flow: column;
+    gap: 20px;
+    order: 2;
+
+    @media(max-width: $logoBreak) {
+        order: -1;
+    }
+}
+
 .footer-content__social img {
     flex: 1;
-
-    @media (max-width: $bp-tablet) {
-        align-self: center;
-    }
-
 }
 
 .footer-content__social-row {
     font-size: 14px;
-    width: 320px;
+    width: 260px;
 
     @media(max-width: $bp-tablet) {
         font-size: 12px;
-
     }
-
 }
 
 .footer-content__social-row a {
@@ -97,14 +110,6 @@
     object-fit: contain;
 }
 
-.footer-content__logo {
-    padding-bottom: 40px;
-
-    @media(max-width: $bp-tablet) {
-        height: 100px;
-        padding-bottom: 0px;
-    }
-}
 
 #map {
     width: 50%;
@@ -120,12 +125,24 @@
 footer img.logo {
     margin-left: -10px;
     margin-bottom: -10px;
-    width: 100px;
+    width: 120px;
+    opacity: .8;
+    object-fit: contain;
+
+    @media(max-width: $logoBreak) {
+        width: 100px;
+    }
 }
 
 .social-rows {
     display: flex;
     flex-flow: column;
-    gap: 10px;
+    gap: 20px;
     padding: 20px 0;
+}
+
+.footer .copy {
+    text-align: center;
+    padding-top: 20px;
+    // padding: $gutter;
 }

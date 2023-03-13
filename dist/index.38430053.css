@@ -449,6 +449,7 @@ p {
 }
 
 body {
+  width: 100vw;
   background: #426b58;
   position: relative;
 }
@@ -1699,7 +1700,7 @@ cite {
 .footer {
   color: #fff;
   background: #426b58;
-  padding: 0;
+  padding: 0 0 20px;
 }
 
 .footer p {
@@ -1708,7 +1709,7 @@ cite {
 
 @media (max-width: 450px) {
   .footer {
-    padding: 80px 30px;
+    padding: 40px 30px;
   }
 }
 
@@ -1739,9 +1740,10 @@ cite {
 }
 
 .footer-content__social {
-  flex-flow: column;
+  width: 100%;
+  flex-flow: row;
   flex: 1;
-  gap: 15px;
+  justify-content: space-between;
   padding: 40px 80px;
   display: flex;
 }
@@ -1754,6 +1756,12 @@ cite {
   }
 }
 
+@media (max-width: 500px) {
+  .footer-content__social {
+    flex-flow: column;
+  }
+}
+
 @media (max-width: 450px) {
   .footer-content__social {
     gap: 10px;
@@ -1761,18 +1769,25 @@ cite {
   }
 }
 
+.logoSide {
+  flex-flow: column;
+  order: 2;
+  gap: 20px;
+  display: flex;
+}
+
+@media (max-width: 500px) {
+  .logoSide {
+    order: -1;
+  }
+}
+
 .footer-content__social img {
   flex: 1;
 }
 
-@media (max-width: 1024px) {
-  .footer-content__social img {
-    align-self: center;
-  }
-}
-
 .footer-content__social-row {
-  width: 320px;
+  width: 260px;
   font-size: 14px;
 }
 
@@ -1808,17 +1823,6 @@ cite {
   object-fit: contain;
 }
 
-.footer-content__logo {
-  padding-bottom: 40px;
-}
-
-@media (max-width: 1024px) {
-  .footer-content__logo {
-    height: 100px;
-    padding-bottom: 0;
-  }
-}
-
 #map {
   width: 50%;
   height: 345px;
@@ -1833,16 +1837,29 @@ cite {
 }
 
 footer img.logo {
-  width: 100px;
+  width: 120px;
+  opacity: .8;
+  object-fit: contain;
   margin-bottom: -10px;
   margin-left: -10px;
 }
 
+@media (max-width: 500px) {
+  footer img.logo {
+    width: 100px;
+  }
+}
+
 .social-rows {
   flex-flow: column;
-  gap: 10px;
+  gap: 20px;
   padding: 20px 0;
   display: flex;
+}
+
+.footer .copy {
+  text-align: center;
+  padding-top: 20px;
 }
 
 form {
