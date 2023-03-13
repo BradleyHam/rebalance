@@ -1,80 +1,96 @@
 #overlay {
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background-color: rgba(0, 0, 0, 0.897);
-    z-index: 10;
-    display: none;
-    &.active{
-        display: initial
-    }
-  }
-  #modal {
-    position: fixed;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    border-radius: 10px;
-    z-index: 11;
-    display: none;
-    min-width: 50vw;
-    &.active{
-        display: initial
-    }
-    @media(max-width: $bp-tablet){
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.897);
+  z-index: 10;
+  display: none;
 
-    }
-    @media(max-width: $bp-mobile){
-      height: 100vh;
-      width: 100vw;
-    }
+  &.active {
+    display: initial
   }
-  #modal__content {
-    border-radius: 10px;
-    display: flex;
-    align-items: center;
-    position: relative;
-    height: 100%;
-    background: $tertiary-color;
-    @media(max-width: $bp-tablet){
-      flex-flow: column;
+}
 
-    }
+#modal {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 10px;
+  z-index: 11;
+  display: none;
+  min-width: 50vw;
+
+  &.active {
+    display: initial
   }
-  .modal__text{
-    width: 500px;
-    flex:2;
-    padding: 80px;
-    @media(max-width: $bp-tablet){
-      flex: initial;
-      align-self: center;
-      justify-self: center;
-      margin: auto;
-      padding: 40px;
-    }
-    @media(max-width: $bp-mobile){
-      padding: 30px;
-      width: initial;
-    }
+
+  @media(max-width: $bp-tablet) {}
+
+  @media(max-width: $bp-mobile) {
+    height: 100vh;
+    width: 100vw;
   }
-  .modal__text p{
-    padding: 15px 0;
+}
+
+#modal__content {
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  position: relative;
+  height: 100%;
+  background: $tertiary-color;
+
+  @media(max-width: $bp-tablet) {
+    flex-flow: column;
+
   }
- 
-  .modal__close{
-    position: absolute;
-    right: 20px;
-    top: 20px;
-    cursor: pointer;
-    padding: 5px;
+}
+
+.modal__text {
+  width: 500px;
+  flex: 2;
+  padding: 80px;
+
+  @media(max-width: $bp-tablet) {
+    flex: initial;
+    align-self: center;
+    justify-self: center;
+    margin: auto;
+    padding: 40px;
   }
-  .modal__close img{
-    height: 18px;
+
+  @media(max-width: $bp-mobile) {
+    padding: 30px;
+    width: initial;
   }
-  .modal__form-container{
-    @media(max-width: $bp-tablet){
-      display: none!important;
-    }
+}
+
+.modal__text p {
+  padding: 15px 0;
+}
+
+.modal__close {
+  position: absolute;
+  right: 20px;
+  top: 20px;
+  cursor: pointer;
+  padding: 5px;
+}
+
+.modal__close img {
+  height: 18px;
+}
+
+.modal__form-container {
+  @media(max-width: $bp-tablet) {
+    display: none !important;
   }
+}
+
+.gift-vouchers-available {
+  padding-bottom: 3px;
+  padding-top: 5px;
+}

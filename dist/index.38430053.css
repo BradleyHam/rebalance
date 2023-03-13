@@ -1697,6 +1697,11 @@ cite {
   }
 }
 
+.gift-vouchers-available {
+  padding-top: 5px;
+  padding-bottom: 3px;
+}
+
 .footer {
   color: #fff;
   background: #426b58;
