@@ -1501,7 +1501,6 @@ hr {
     width: 100px;
     object-fit: cover;
     margin-left: 50%;
-    transform: translateX(-50%);
   }
 
   .nav-active .nav__list--mobile ul {
@@ -1635,7 +1634,7 @@ cite {
   display: initial;
 }
 
-@media (max-width: 450px) {
+@media (max-width: 507px) {
   #modal {
     height: 100vh;
     width: 100vw;
@@ -1689,6 +1688,12 @@ cite {
   position: absolute;
   top: 20px;
   right: 20px;
+}
+
+@media (max-width: 507px) {
+  .modal__close {
+    top: 40px;
+  }
 }
 
 .modal__close img {
