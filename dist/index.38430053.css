@@ -1489,9 +1489,11 @@ hr {
     visibility: inherit;
     z-index: 10;
     background: #426b58;
+    flex-flow: column;
+    justify-content: start;
     align-items: center;
     margin-right: 0;
-    display: block;
+    display: flex;
     top: 0;
     right: 0;
   }
@@ -1500,15 +1502,15 @@ hr {
     height: 100px;
     width: 100px;
     object-fit: cover;
-    margin-left: 50%;
   }
 
   .nav-active .nav__list--mobile ul {
     flex-flow: column;
     align-items: center;
     gap: 10px;
-    margin-top: 50%;
+    margin: auto;
     display: flex;
+    transform: translateY(-50px);
   }
 
   .nav-active .nav__list--mobile li {
@@ -1692,7 +1694,7 @@ cite {
 
 @media (max-width: 507px) {
   .modal__close {
-    top: 40px;
+    top: 60px;
   }
 }
 

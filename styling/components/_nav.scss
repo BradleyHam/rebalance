@@ -93,7 +93,9 @@
   }
 
   .nav-active .nav__list--mobile {
-    display: block;
+    display: flex;
+    flex-flow: column;
+    justify-content: start;
     background: $primary-color;
     width: 100vw;
     right: 0;
@@ -107,13 +109,12 @@
     & img {
       height: 100px;
       width: 100px;
-      margin-left: 50%;
-
       object-fit: cover
     }
 
     & ul {
-      margin-top: 50%;
+      margin: auto;
+      transform: translateY(-50px);
       align-items: center;
       display: flex;
       flex-flow: column;
@@ -132,12 +133,6 @@
     }
   }
 
-  // .nav-active .nav__list--mobile ul{
-  // display: flex;
-  // align-items: center;
-  // flex-flow: column;
-  // gap: 15px;
-  // }
   .nav__list--mobile a {
     color: $background-color;
     text-decoration: none;
