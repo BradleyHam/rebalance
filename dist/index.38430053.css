@@ -1491,7 +1491,7 @@ hr {
     background: #426b58;
     align-items: center;
     margin-right: 0;
-    display: flex;
+    display: block;
     top: 0;
     right: 0;
   }
@@ -1500,11 +1500,15 @@ hr {
     height: 100px;
     width: 100px;
     object-fit: cover;
+    margin-left: 50%;
+    transform: translateX(-50%);
   }
 
   .nav-active .nav__list--mobile ul {
     flex-flow: column;
+    align-items: center;
     gap: 10px;
+    margin-top: 50%;
     display: flex;
   }
 

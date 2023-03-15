@@ -21,12 +21,9 @@
     </head>
 
     <body>
-        <nav class="desktop-nav nav">
-            <div class="container nav__container">
+        <header class="desktop-nav nav">
+            <nav class="container nav__container">
                 <ul class="nav__list">
-                    <li class="nav__list--item">
-                        <a href="#hero">Home</a>
-                    </li>
                     <li class="nav__list--item">
                         <a href="#services">Services</a>
                     </li>
@@ -35,6 +32,9 @@
                     </li>
                     <li class="nav__list--item">
                         <a href="#prices">Prices</a>
+                    </li>
+                    <li class="nav__list--item">
+                        <a href="#testimonials">Testimonials</a>
                     </li>
                 </ul>
                 <div class="nav__logo">
@@ -57,8 +57,8 @@
                     </a>
                     <div class="nav__right-side__button button book-button">book Now</div>
                 </div>
-            </div>
-        </nav>
+            </nav>
+        </header>
 
         <nav id="movile-nav" class="mobile-nav nav">
             <div class="container nav__container">
@@ -94,9 +94,6 @@
                     <div class="nav__list--mobile">
                         <img class="logo" src="./images/logo.png" alt="Rebalance green circular logo with a lotus flower icon - Massage therapy and holistic wellness company">
                         <ul>
-                            <li class="nav__list--item active">
-                                <a href="#hero">Home</a>
-                            </li>
                             <li class="nav__list--item">
                                 <a href="#services">Services</a>
                             </li>
@@ -106,10 +103,11 @@
                             <li class="nav__list--item">
                                 <a href="#prices">Prices</a>
                             </li>
-                        </ul>
-                        <div class="secondary-buttons">
+                            <li class="nav__list--item">
+                                <a href="#testimonials">Testimonials</a>
+                            </li>
                             <div class="button secondary-button">book now</div>
-                        </div>
+                        </ul>
                     </div>
                 </div>
             </div>
@@ -349,7 +347,7 @@
     
        
 
-        <section class="testimonials splide" aria-label="Splide Basic HTML Example">
+        <section id="testimonials" class="testimonials splide" aria-label="testimo">
             <img id="stars" src="./images/Stars.webp" alt="Image of 5 golden stars representing the rating given by our satisfied customers">
             <h4>Customer Reviews</h4>
             <h2>See what our customers had to say</h2>
