@@ -2027,24 +2027,51 @@ input[type="text"]::placeholder, input[type="email"]::placeholder, input[type="t
 
 .hero img {
   clip-path: polygon(25% 0%, 100% 0%, 100% 100%, 25% 100%, 0% 100%);
-  width: 600px;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
 @media (max-width: 1024px) {
   .hero img {
     clip-path: none;
-    width: 100vw;
-    margin-top: 50px;
+    object-position: center -600px;
+  }
+}
+
+@media (max-width: 700px) {
+  .hero img {
+    object-position: center -400px;
+  }
+}
+
+@media (max-width: 545px) {
+  .hero img {
+    object-position: center -300px;
+  }
+}
+
+@media (max-width: 445px) {
+  .hero img {
+    object-position: center -200px;
+  }
+}
+
+@media (max-width: 400px) {
+  .hero img {
+    object-position: center -100px;
   }
 }
 
 .hero__image--container {
+  width: 600px;
   overflow: hidden;
 }
 
 @media (max-width: 1024px) {
   .hero__image--container {
     height: 300px;
+    width: 100%;
     z-index: 1;
     justify-content: center;
     align-items: center;
