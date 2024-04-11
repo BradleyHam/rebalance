@@ -437,9 +437,10 @@ h4 {
 }
 
 p {
+  opacity: .8;
   color: #333;
   font-family: Lato, sans-serif;
-  font-size: 14px;
+  font-size: 17px;
   font-weight: 300;
   line-height: 1.5;
 }
@@ -2252,7 +2253,7 @@ input[type="text"]::placeholder, input[type="email"]::placeholder, input[type="t
 .prices__container {
   flex-wrap: wrap;
   justify-content: flex-start;
-  gap: 40px 30px;
+  gap: 10px;
   display: flex;
 }
 
@@ -2263,6 +2264,32 @@ input[type="text"]::placeholder, input[type="email"]::placeholder, input[type="t
   flex-flow: column;
   padding: 30px;
   display: flex;
+}
+
+.prices-card--add-on {
+  width: calc(33.3% - 20px);
+  background-color: #f6f8fa;
+  flex-flow: column;
+  align-items: start;
+  gap: 10px;
+  padding: 30px;
+  display: flex;
+}
+
+@media (max-width: 1024px) {
+  .prices-card--add-on {
+    width: calc(50% - 20px);
+  }
+}
+
+@media (max-width: 700px) {
+  .prices-card--add-on {
+    width: 100%;
+  }
+}
+
+.prices-card--add-on h3 {
+  font-size: 20px;
 }
 
 @media (max-width: 1024px) {

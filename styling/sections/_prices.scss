@@ -18,8 +18,8 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: flex-start;
-    row-gap: 40px;
-    column-gap: 30px;
+    gap: 10px 10px;
+    display: flex;
 }
 
 .prices-card {
@@ -29,6 +29,25 @@
     width: calc(33.3% - 20px);
     border: 1px solid rgba(51, 51, 51, 0.39);
     padding: 30px;
+    &--add-on {
+        display: flex;
+        flex-flow: column;
+        gap: 10px;
+        align-items: start;
+         width: calc(33.3% - 20px);
+        background-color: rgb(246, 248, 250);
+        padding: 30px;
+        @media(max-width: $bp-tablet) {
+            width: calc(50% - 20px);
+        }
+    
+        @media(max-width: 700px) {
+            width: 100%;
+        }
+    }
+    &--add-on h3 {
+       font-size: 20px;
+    }
 
     @media(max-width: $bp-tablet) {
         width: calc(50% - 20px);
