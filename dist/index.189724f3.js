@@ -1334,7 +1334,7 @@ n = this, t = function() {
             }
             return {
                 mount: function() {
-                    u && (a(!t.Autoplay.isPaused()), I(o, ot, !0), e.textContent = "…", r(Fn, R(a, !0)), r(Xn, R(a, !1)), r([
+                    u && (a(!t.Autoplay.isPaused()), I(o, ot, !0), e.textContent = "\u2026", r(Fn, R(a, !0)), r(Xn, R(a, !1)), r([
                         Dn,
                         V
                     ], R(f, !0)));

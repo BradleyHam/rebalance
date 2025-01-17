@@ -1,6 +1,7 @@
 {
   "dependencies": {
-    "hamburgers": "^1.2.1"
+    "hamburgers": "^1.2.1",
+    "parcel": "^2.13.3"
   },
   "name": "rebalance",
   "description": "",
@@ -8,7 +9,7 @@
   "devDependencies": {
     "@html-eslint/eslint-plugin": "^0.16.0",
     "@html-eslint/parser": "^0.16.0",
-    "@parcel/transformer-sass": "^2.8.3",
+    "@parcel/transformer-sass": "^2.13.3",
     "browser-sync": "^2.27.11",
     "eslint": "^8.35.0",
     "eslint-plugin-html": "^7.1.0",
@@ -18,11 +19,10 @@
     "prettier": "^2.8.4",
     "sass": "^1.57.1"
   },
-    "scripts": {
+  "scripts": {
     "build": "parcel build index.html --dist-dir docs --public-url './'",
     "dev": "parcel index.html"
   },
-
   "repository": {
     "type": "git",
     "url": "git+https://github.com/BradleyHam/rebalance.git"
