@@ -460,6 +460,11 @@ hr {
   opacity: .1;
 }
 
+.queenstown-directory {
+  color: #fff;
+  font-size: 14px;
+}
+
 .button {
   color: #fff;
   text-transform: uppercase;
