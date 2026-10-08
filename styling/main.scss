@@ -22,3 +22,54 @@
 @import "./sections/services";
 @import "./sections/about";
 @import "./sections/prices";
+
+// Keep interactive controls usable without changing the existing design.
+.services-card__image-container {
+  display: block;
+  width: 100%;
+  padding: 0;
+  border: 0;
+  background: transparent;
+  cursor: pointer;
+}
+
+button:focus-visible, a:focus-visible {
+  outline: 3px solid currentColor;
+  outline-offset: 4px;
+}
+
+section[id] {
+  scroll-margin-top: 90px;
+}
+
+#modal {
+  max-height: calc(100dvh - 40px);
+  overflow-y: auto;
+
+  @media (max-width: 507px) {
+    height: 100dvh;
+    max-height: 100dvh;
+  }
+}
+
+.modal__close {
+  background: transparent;
+  border: 0;
+  line-height: 1;
+}
+
+.modal__text a {
+  color: inherit;
+  overflow-wrap: anywhere;
+}
+
+
+.logo, .nav__right-side__social-icon, .footer-content__social--icon-image, .modal__close img {
+  width: auto;
+}
+
+.subfooter {
+  @media (max-width: 600px) {
+    padding: 20px 0;
+  }
+}

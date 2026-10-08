@@ -1,5 +1,5 @@
 import mountCarousel from "./initializeCarousel";
-import registerEventListeners from './EventListeners';
+import registerEventListeners from "./EventListeners";
 
-mountCarousel();
 registerEventListeners();
+mountCarousel();
